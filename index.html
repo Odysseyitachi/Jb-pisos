@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JB PISOS | Laminado e Vinílico em Campinas e Valinhos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
+}
+
+header h1{
+font-size:20px;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#c9a227;
+}
+
+.hero{
+margin-top:80px;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#c9a227;
+color:black;
+padding:15px 35px;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#b8921f;
+}
+
+.section{
+padding:90px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:300px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.galeria{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.galeria img{
+width:300px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+.marcas{
+background:#fff;
+padding:70px 20px;
+}
+
+.marcas h2{
+margin-bottom:30px;
+}
+
+.marcas p{
+font-size:18px;
+}
+
+.depoimentos{
+background:#111;
+color:white;
+padding:80px 20px;
+}
+
+.depoimento{
+max-width:700px;
+margin:20px auto;
+font-style:italic;
+}
+
+.cta{
+background:#c9a227;
+color:black;
+padding:60px 20px;
+text-align:center;
+}
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+.cards{
+flex-direction:column;
+align-items:center;
+}
+.hero h2{
+font-size:28px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>JB PISOS</h1>
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#galeria">Galeria</a>
+<a href="#marcas">Marcas</a>
+<a href="#depoimentos">Depoimentos</a>
+<a href="https://wa.me/555555555555" target="_blank">Orçamento</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Piso Laminado e Vinílico com Instalação Profissional</h2>
+<p>Atendemos Campinas e Valinhos com qualidade, agilidade e acabamento impecável.</p>
+<br>
+<a class="btn" href="https://wa.me/555555555555" target="_blank">Solicitar Orçamento</a>
+</section>
+
+<section id="servicos" class="section">
+<h2>Nossos Serviços</h2>
+<div class="cards">
+<div class="card">
+<h3>Piso Laminado</h3>
+<p>Elegância, conforto térmico e excelente custo-benefício.</p>
+</div>
+<div class="card">
+<h3>Piso Vinílico</h3>
+<p>Ideal para ambientes modernos, resistente à umidade e silencioso.</p>
+</div>
+<div class="card">
+<h3>Instalação Completa</h3>
+<p>Equipe especializada garantindo acabamento de alto padrão.</p>
+</div>
+</div>
+</section>
+
+<section id="galeria" class="section">
+<h2>Galeria de Trabalhos</h2>
+<div class="galeria">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+</div>
+<br><br>
+<a class="btn" href="https://wa.me/555555555555" target="_blank">Quero Meu Orçamento</a>
+</section>
+
+<section id="marcas" class="marcas">
+<h2>Trabalhamos com as Melhores Marcas</h2>
+<p>Durafloor • Eucafloor • Tarkett • Quick-Step • Santa Luzia</p>
+</section>
+
+<section id="depoimentos" class="depoimentos">
+<h2>O que nossos clientes dizem</h2>
+<div class="depoimento">
+"Serviço impecável, instalação rápida e ambiente transformado!" ⭐⭐⭐⭐⭐
+</div>
+<div class="depoimento">
+"Profissionais extremamente organizados e pontuais." ⭐⭐⭐⭐⭐
+</div>
+</section>
+
+<section class="cta">
+<h2>Transforme seu ambiente hoje mesmo</h2>
+<br>
+<a class="btn" href="https://wa.me/555555555555" target="_blank">Falar no WhatsApp</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/555555555555" target="_blank">
+WhatsApp
+</a>
+
+<footer>
+© 2026 JB PISOS - Campinas e Valinhos, SP
+</footer>
+
+</body>
+</html>
