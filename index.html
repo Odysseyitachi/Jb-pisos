@@ -95,16 +95,14 @@ background:#25d366;
 padding:90px 20px;
 text-align:center;
 
-background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
 url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c');
 
 background-size:cover;
-background-position:center;
-
-/* ESSA LINHA AQUI ERA O PROBLEMA */
-background-attachment:scroll;
+background-position: center top;
+background-repeat:no-repeat;
 }
-
+ 
 .section h2{
 font-size:32px;
 margin-bottom:40px;
@@ -251,6 +249,13 @@ font-size:15px;
 .galeria img{
 width:100%;
 height:220px;
+}
+
+/* 👇 ISSO AQUI É O QUE RESOLVE O FUNDO */
+.section{
+background-size:contain;
+background-position:top;
+background-repeat:no-repeat;
 }
 
 /* BOTÃO */
