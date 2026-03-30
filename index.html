@@ -273,6 +273,15 @@ header.hide{
 transform:translateY(-100%);
 opacity:0;
 }
+ /* FUNDO SÓ NA GALERIA (SEM CORTAR) */
+.galeria-section{
+background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c');
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
  
 </style>
 </head>
@@ -312,7 +321,7 @@ opacity:0;
 </div>
 </section>
 
-<section id="" class="section">
+<section class="section galeria-section">
 <h2>Galeria de Trabalhos</h2>
 <div class="galeria">
 <img src="trabalho1.png">
