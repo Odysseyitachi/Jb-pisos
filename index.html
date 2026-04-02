@@ -384,6 +384,38 @@ header.classList.remove("hide");
 
 lastScroll = currentScroll;
 });
+
+const titulos = [
+"Piso Laminado e Vinílico com Instalação",
+"Acabamento Profissional e Durabilidade",
+"Instalação Rápida e Sem Sujeira",
+"Rodapés e Detalhes de Alto Padrão"
+];
+
+const textos = [
+"Atendemos Campinas e Região com qualidade e agilidade.",
+"Pisos resistentes, modernos e com excelente custo-benefício.",
+"Equipe especializada garantindo perfeição em cada detalhe.",
+"Transforme seu ambiente com elegância e sofisticação."
+];
+
+let i = 0;
+
+setInterval(() => {
+i = (i + 1) % titulos.length;
+
+document.getElementById("tituloHero").style.opacity = 0;
+document.getElementById("textoHero").style.opacity = 0;
+
+setTimeout(() => {
+document.getElementById("tituloHero").innerText = titulos[i];
+document.getElementById("textoHero").innerText = textos[i];
+
+document.getElementById("tituloHero").style.opacity = 1;
+document.getElementById("textoHero").style.opacity = 1;
+}, 300);
+
+}, 4000);
 </script>
  
 </body>
