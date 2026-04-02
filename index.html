@@ -287,6 +287,21 @@ padding:12px 20px;
 font-size:14px;
 }
 
+ .hero{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.hero-direita{
+margin:20px 0 0 0;
+width:100%;
+}
+
+.box{
+width:100%;
+text-align:left;
+}
+
 /* BOTÃO */
 .btn{
 padding:12px 20px;
@@ -297,6 +312,26 @@ font-size:14px;
 header.hide{
 transform:translateY(-100%);
 opacity:0;
+}
+
+.hero-esquerda{
+max-width:500px;
+}
+
+.hero-direita{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-right:50px;
+}
+
+.box{
+background:rgba(255,255,255,0.9);
+color:#333;
+padding:15px 20px;
+border-radius:10px;
+font-weight:500;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
  
 </style>
@@ -314,9 +349,18 @@ opacity:0;
 </header>
 
 <section class="hero">
+
+<div class="hero-esquerda">
 <h2 id="tituloHero">Piso Laminado e Vinílico com Instalação</h2>
 <p id="textoHero">Atendemos Campinas e Região com qualidade, agilidade e acabamento impecável.</p>
-<br>
+</div>
+
+<div class="hero-direita">
+<div class="box">✔ Instalação rápida</div>
+<div class="box">✔ Acabamento perfeito</div>
+<div class="box">✔ Pisos resistentes</div>
+</div>
+
 </section>
 
 <section id="servicos" class="section">
