@@ -296,27 +296,28 @@ flex-direction:column;
 align-items:flex-start;
 }
 
+@media(max-width:768px){
+
 .hero-direita{
-position:static;
-transform:none;
-
-display:flex;
-flex-direction:column;
-gap:10px;
-
-margin-top:20px;
-width:100%;
+width:100% !important;
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
 }
 
 .box{
-width:90%;      /* 👈 DIMINUI A LARGURA */
-margin:0 auto;  /* 👈 CENTRALIZA */
+width:90% !important;      /* 👈 agora VAI funcionar */
+max-width:90% !important;
 
-padding:12px;
-font-size:13px;
+margin:0 auto !important;
 
-border-radius:12px;
-background:rgba(0,0,0,0.65);
+padding:12px !important;
+font-size:13px !important;
+
+border-radius:12px !important;
+background:rgba(0,0,0,0.65) !important;
+}
+
 }
 /* BOTÃO */
 .btn{
