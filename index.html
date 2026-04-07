@@ -297,15 +297,15 @@ align-items:flex-start;
 }
 
 .hero-direita{
-position:static;
+position:static;       /* 👈 ISSO AQUI É O PRINCIPAL */
 transform:none;
+
 display:flex;
 flex-direction:column;
 gap:12px;
+
 margin-top:20px;
 width:100%;
-padding:0 10px;
-box-sizing:border-box;
 }
 
 .box{
@@ -337,13 +337,6 @@ left:50%;
 transform:translateX(-50%);
 display:flex;
 gap:28px;
-}
-
- @media(max-width:768px){
-.hero-direita{
-left:0;
-transform:none;
-}
 }
 
 .box{
