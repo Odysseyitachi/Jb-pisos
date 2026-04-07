@@ -296,28 +296,26 @@ flex-direction:column;
 align-items:flex-start;
 }
 
-@media(max-width:768px){
-
 .hero-direita{
-width:100% !important;
-display:flex !important;
-flex-direction:column !important;
-align-items:center !important;
+position:static;
+transform:none;
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:20px;
+width:100%;
+padding:0 10px;
+box-sizing:border-box;
 }
 
 .box{
-width:90% !important;      /* 👈 agora VAI funcionar */
-max-width:90% !important;
-
-margin:0 auto !important;
-
-padding:12px !important;
-font-size:13px !important;
-
-border-radius:12px !important;
-background:rgba(0,0,0,0.65) !important;
-}
-
+width:100%;
+max-width:100%;
+min-width:0;
+padding:14px;
+font-size:13px;
+box-sizing:border-box;
+word-break:break-word;
 }
 /* BOTÃO */
 .btn{
