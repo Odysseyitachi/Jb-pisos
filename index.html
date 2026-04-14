@@ -306,13 +306,27 @@ background-color:transparent;
 }
 
 #servicos,
-.section:nth-of-type(3){
+#galeria{
+position: relative;
+z-index: 1;
+}
+
+#servicos::before,
+#galeria::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
 background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
 url('https://images.unsplash.com/photo-1582582494700-7e3c2c9c1c3e?q=80&w=1200');
 
 background-size:cover;
 background-position:center top;
-background-repeat:no-repeat;
+
+z-index:0;
 }
 
 /* BOTÃO */
@@ -491,7 +505,7 @@ Rodapés, ajustes finos e finalização de alto padrão para deixar seu espaço 
 </div>
 </section>
 
-<section id="" class="section">
+<section id="galeria" class="section">
 <div class="galeria">
 <img src="trabalho1.png">
 <img src="trabalho2.png">
